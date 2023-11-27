@@ -1,0 +1,17 @@
+{
+    "name": "SmoothMQTT.Editor",
+    "references": [
+        "GUID:0290977510c384e42aa98876013b77e0"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

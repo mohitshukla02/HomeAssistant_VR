@@ -1,0 +1,4 @@
+﻿Asset is governed by the Asset Store EULA; however, the following components are governed by the licenses indicated below:
+1. MQTTnet.dll (MIT License by Christian Kratky, full license text https://github.com/chkr1011/MQTTnet/blob/master/LICENSE)
+
+
