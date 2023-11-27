@@ -78,6 +78,7 @@ namespace DA_Assets.FCU
 
                 yield return monoBeh.CanvasDrawer.DrawToCanvas(monoBeh.CurrentProject.CurrentPage);
                 yield return monoBeh.TransformSetter.SetFigmaTransform(monoBeh.CurrentProject.CurrentPage);
+                yield return monoBeh.TransformSetter.SetFigmaTransform(monoBeh.CurrentProject.CurrentPage);
             }
             else
             {

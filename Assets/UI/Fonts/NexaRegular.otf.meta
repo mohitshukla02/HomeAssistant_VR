@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d4ccfe0e969b7d54d8d27e7f3fa96805
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Nexa
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: cd7018dfe4501a143a5456fdcb4c6cd1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
