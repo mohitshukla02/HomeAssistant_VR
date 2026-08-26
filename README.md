@@ -1,41 +1,45 @@
 # HomeAssistant_VR
 
-> Tying HomeAssistant integration with Meta Quest (Pro/3)
+Home Assistant control in a headset. A worldspace panel on Meta Quest that
+drives real lights and devices over MQTT.
 
-## 📖 Overview
-A virtual reality / augmented reality exploration and development project focused on building immersive experiences using Unity and C#.
+## What it does
 
-## 🛠️ Built With
-* **Engine:** Unity `2022.3.3f1`
-* **Language:** C#
-### 📦 Key Plugins & SDKs
-* **com.meta.xr.sdk.all** (`59.0.0`)
-* **com.unity.collab-proxy** (`2.2.0`)
-* **com.unity.ide.rider** (`3.0.24`)
-* **com.unity.ide.visualstudio** (`2.0.18`)
-* **com.unity.ide.vscode** (`1.2.5`)
-* **com.unity.render-pipelines.universal** (`14.0.8`)
-* **com.unity.test-framework** (`1.1.33`)
-* **com.unity.textmeshpro** (`3.0.6`)
-* **com.unity.timeline** (`1.7.4`)
-* **com.unity.ugui** (`1.0.0`)
-* **com.unity.visualscripting** (`1.8.0`)
+The panel publishes to and subscribes from the Home Assistant MQTT bridge —
+`msHA/Lights/Bedroom/...` for individual and grouped lights, `msHA/Devices/...`
+for room devices. Subscribing as well as publishing matters: the panel reflects
+what the house is actually doing, so it stays correct when something is changed
+from a wall switch or a phone.
 
-## 🚀 Getting Started
+Layouts are designed in Figma and imported straight into Unity, and spatial
+arrangement is prototyped in ShapesXR and imported alongside — so where the
+panel sits relative to you is a design decision made in headset, not a
+transform typed into the inspector.
 
-### Prerequisites
-* Unity Hub and Unity Editor version **`2022.3.3f1`**
+## Scenes
 
-### Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/mohitshukla02/HomeAssistant_VR.git
-   ```
-2. Open the project via Unity Hub.
-3. Wait for the packages to resolve and load.
+| Scene | Purpose |
+|---|---|
+| `SampleScene` | The VR control panel |
+| `2D_TemplateMQTTTest` | Flat-screen MQTT wiring, testable without a headset |
 
-## 📝 License
-**All rights reserved.** This project and its contents are strictly private. Unauthorized copying, modification, distribution, or use of this project, via any medium, is strictly prohibited.
+## Built with
+
+Unity 2022.3.3f1 (URP) · Meta XR SDK 59 · smoothMQTT ·
+Figma Converter for Unity · ShapesXR · Meta Quest Pro / Quest 3
+
+## Related
+
+[SmartHomeOS](https://github.com/mohitshukla02/SmartHomeOS) — the UI layer ·
+[HA_Passthrough](https://github.com/mohitshukla02/HA_Passthrough) — the
+passthrough build ·
+[Test-SmoothMQTT](https://github.com/mohitshukla02/Test-SmoothMQTT) — the MQTT
+groundwork
+
+## Third-party assets
+
+Bundles the Meta XR SDK, smoothMQTT, Figma Converter for Unity, ShapesXR,
+TotalJSON, and DOTween, which remain under their own licenses.
 
 ## License
 
